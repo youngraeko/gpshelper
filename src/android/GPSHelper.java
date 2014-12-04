@@ -1,4 +1,4 @@
-package com.swipeclock.twm.gpshelper;
+package org.swipeclock.twm.gpshelper;
 
 import android.location.LocationManager;
 import android.content.Context;
