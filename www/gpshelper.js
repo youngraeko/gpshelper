@@ -5,7 +5,7 @@ var geohelper=  {
             errorCallback, 		// error callback function
             'GPSHelper', 		// mapped to our native Java class called "Calendar"
             'checkGPSEnabled', 		// with this action name
-            null,                  	// and this array of custom arguments to create our entry              
+            [],                  	// and this array of custom arguments to create our entry              
         );
     }
 }
