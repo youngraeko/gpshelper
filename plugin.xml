@@ -1,22 +1,22 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-id="org.devgirl.calendar"
+id="com.swipeclock.twm.gpshelper"
 version="0.1.0">
-<name>Calendar</name>
-<description>Sample PhoneGap Calendar Plugin</description>
+<name>GPSHelper</name>
+<description>GPS Helper Plugin</description>
 <license>MIT</license>
-<keywords>phonegap,calendar</keywords>
-<js-module src="www/calendar.js" name="Calendar">
+<keywords>cordova,gps</keywords>
+<js-module src="www/gpshelper.js" name="GPSHelper">
 <clobbers target="window.calendar" />
 </js-module>
 <!-- android -->
 <platform name="android">
 <config-file target="res/xml/config.xml" parent="/*">
-<feature name="Calendar">
-<param name="android-package" value="org.devgirl.calendar.Calendar"/>
+<feature name="GPSHelper">
+<param name="android-package" value="com.swipeclock.twm.gpshelper.GPSHelper"/>
 </feature>
 </config-file>
-<source-file src="src/android/Calendar.java" target-dir="src/org/devgirl/calendar" />
+<source-file src="src/android/GPSHelper.java" target-dir="src/com/swipeclock/twm/gpshelper" />
 </platform>
 </plugin>
