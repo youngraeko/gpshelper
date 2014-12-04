@@ -8,5 +8,5 @@ var geohelper=  {
             []                  	// and this array of custom arguments to create our entry              
         );
     }
-}
+};
 module.exports = geohelper;
