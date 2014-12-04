@@ -1,7 +1,7 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-id="com.swipeclock.twm.gpshelper"
+id="org.swipeclock.twm.gpshelper"
 version="0.1.0">
 <name>GPSHelper</name>
 <description>GPS Helper Plugin</description>
@@ -14,9 +14,9 @@ version="0.1.0">
 <platform name="android">
 <config-file target="res/xml/config.xml" parent="/*">
 <feature name="GPSHelper">
-<param name="android-package" value="com.swipeclock.twm.gpshelper.GPSHelper"/>
+<param name="android-package" value="org.swipeclock.twm.gpshelper.GPSHelper"/>
 </feature>
 </config-file>
-<source-file src="src/android/GPSHelper.java" target-dir="src/com/swipeclock/twm/gpshelper" />
+<source-file src="src/android/GPSHelper.java" target-dir="src/org/swipeclock/twm/gpshelper" />
 </platform>
 </plugin>
