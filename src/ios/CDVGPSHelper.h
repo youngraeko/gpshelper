@@ -10,7 +10,5 @@
 #import <Cordova/CDVPlugin.h>
 
 @interface CDVGPSHelper : CDVPlugin
-
-- (NSString *) checkGPSEnabled;
-
+- (void) checkGPSEnabled:(CDVInvokedUrlCommand *)command;
 @end
