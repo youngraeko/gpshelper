@@ -11,14 +11,19 @@
 
 @implementation CDVGPSHelper
 
-- (NSString *) checkGPSEnabled{
+- (void) checkGPSEnabled:(CDVInvokedUrlCommand *)command{
+    
+    NSString *result = @"GPS Disabled";
     
     if([CLLocationManager locationServicesEnabled] &&
        [CLLocationManager authorizationStatus] != kCLAuthorizationStatusDenied) {
-        return @"GPS Enabled";
-    } else {
-        return @"GPS Disabled";
+        result = @"GPS Enabled";
     }
+    
+    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:result];
+    
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
 @end
+
