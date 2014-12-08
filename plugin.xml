@@ -21,4 +21,15 @@ version="0.1.0">
     <source-file src="src/android/GPSHelper.java" target-dir="src/org/swipeclock/twm/gpshelper" />
   </platform>
   
+  <!-- iOS -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="GPSHelper">
+        <param name="ios-package" value="CDVGPSHelper"/>
+      </feature>
+    </config-file>
+    <header-file src="src/ios/CDVGPSHelper.h" />
+    <source-file src="src/ios/CDVGPSHelper.m" />
+  </platform>
+  
 </plugin>
