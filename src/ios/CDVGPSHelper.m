@@ -16,10 +16,11 @@
     NSString *result = @"GPS Disabled";
     
     if([CLLocationManager locationServicesEnabled] &&
-       [CLLocationManager authorizationStatus] != kCLAuthorizationStatusDenied) {
+       [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorized) {
         result = @"GPS Enabled";
     }
     
+
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:result];
     
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
