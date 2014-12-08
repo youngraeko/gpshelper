@@ -3,20 +3,22 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
 id="org.swipeclock.twm.gpshelper"
 version="0.1.0">
-<name>GPSHelper</name>
-<description>GPS Helper Plugin</description>
-<license>MIT</license>
-<keywords>cordova,gps</keywords>
-<js-module src="www/gpshelper.js" name="GPSHelper">
-<clobbers target="window.gpshelper" />
-</js-module>
-<!-- android -->
-<platform name="android">
-<config-file target="res/xml/config.xml" parent="/*">
-<feature name="GPSHelper">
-<param name="android-package" value="org.swipeclock.twm.gpshelper.GPSHelper"/>
-</feature>
-</config-file>
-<source-file src="src/android/GPSHelper.java" target-dir="src/org/swipeclock/twm/gpshelper" />
-</platform>
+  <name>GPSHelper</name>
+  <description>GPS Helper Plugin</description>
+  <license>MIT</license>
+  <keywords>cordova,gps</keywords>
+  <js-module src="www/gpshelper.js" name="GPSHelper">
+    <clobbers target="window.gpshelper" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="GPSHelper">
+        <param name="android-package" value="org.swipeclock.twm.gpshelper.GPSHelper"/>
+      </feature>
+    </config-file>
+    <source-file src="src/android/GPSHelper.java" target-dir="src/org/swipeclock/twm/gpshelper" />
+  </platform>
+  
 </plugin>
